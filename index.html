@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Player Data Visaulization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/nba-logo.png">
+</head>
+<body> 
+    <div id="head">
+    <h1>
+        <strong>
+            <span class="blue">N</span>
+            <span class="red">B</span>
+            <span class="orange">A</span>
+            <span class="blue">&nbsp;</span>
+            <span class="green">S</span>
+            <span class="red">h</span>
+            <span class="orange">o</span>
+            <span class="blue">t</span>
+            <span class="green">&nbsp;</span>
+            <span class="red">V</span>
+            <span class="orange">i</span>
+            <span class="blue">s</span>
+            <span class="green">u</span>
+            <span class="red">a</span>
+            <span class="orange">l</span>
+            <span class="blue">i</span>
+            <span class="green">z</span>
+            <span class="red">a</span>
+            <span class="orange">t</span>
+            <span class="blue">i</span>
+            <span class="green">o</span>
+            <span class="red">n</span>
+        </strong>
+    </h1>
+    </div>
+
+    <hr>
+    
+    <div id="NBA-Visual">
+        <div class="control-bar">
+            <select id="player-selection">
+                <option value="none" selected disabled hidden>
+                    Select a Player
+                </option>
+                <option value="Giannis Antetokounmpo">
+                    Giannis Antetokounmpo
+                </option>
+                <option value="Kawhi Leonard">
+                    Kawhi Leonard
+                </option>
+                <option value="Kevin Durant">
+                    Kevin Durant
+                </option>
+                <option value="LeBron James">
+                    LeBron James
+                </option>
+                <option value="Luka Doncic">
+                    Luka Doncic
+                </option>
+                <option value="Nikola Jokic">
+                    Nikola Jokic
+                </option>
+                <option value="Stephen Curry">
+                    Stephen Curry
+                </option>
+            </select>
+        </div>
+        <div id="Player-Visual" class="player-visual">
+            <div id="player-info" class="item">
+                <h3 id="player-name"></h3>
+                <img id="player-image">
+                <h4 id="team"></h4>
+                <p></p>
+                <h4 id="chart-title"></h4>
+                
+            </div>
+            <div id="svg-container" class="item">
+
+            </div>
+            <div id="svg-right">
+                <h2 id="title"> </h2>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/visualization.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<footer>
+    <a href="https://www.nba.com">
+        <img src="img/nba-logo.png">
+    </a>
+    <a href="https://www.espn.com/nba/">
+        <img src="img/espn-logo.png">
+    </a>
+    <a href="https://www.tntdrama.com/nba-on-tnt">
+        <img src="img/tnt-logo.png">
+    </a>
+    <a href="https://www.nbcsports.com/nba">
+        <img src="img/nbc-logo.png">
+    </a>
+    <a href="https://www.miguvideo.com/p/home/3cd6ba04967742879aaa40bee02a99a6">
+        <img src="img/migu-logo.png">
+    </a>
+   
+</footer>
+</html>
